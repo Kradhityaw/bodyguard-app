@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Bodyguard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/dark_grey</item>
+    </style>
+
+    <style name="Theme.Bodyguard" parent="Base.Theme.Bodyguard" />
+    
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#FFDB85</item>
+    </style>
+
+    <style name="App.Custom.Inactive.Indicator" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="App.Custom.Active.Indicator" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="App.Custom.Profile" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="App.Custom.Round.Img" parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="App.Custom.AppBar" parent="">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+</resources>

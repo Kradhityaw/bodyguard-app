@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CameraFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cameraToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Deteksi Pandangan"
+        app:titleTextColor="@color/dark_grey"
+        app:titleTextAppearance="@style/App.Custom.AppBar"/>
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"/>
+
+</LinearLayout>

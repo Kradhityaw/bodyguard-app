@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AboutFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/dark_grey"
+        android:id="@+id/aboutTb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Tentang"
+        app:titleTextAppearance="@style/App.Custom.AppBar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="19dp"
+        android:paddingVertical="16dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang Bodyguard"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/dark_grey"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_logo_barus_foreground"
+            app:shapeAppearance="@style/App.Custom.Round.Img"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi bodyguard dibuat untuk membuat pengguna jalan lebih memperhatikan peraturan lalu lintas yng berlaku, Tujuan dibuatnya aplikasi ini untuk mengedukasi masyarakat Indonesia tentang cara berkendara yang baik"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/dark_grey"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>
